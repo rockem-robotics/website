@@ -1,0 +1,12 @@
+/* Lake Robotics Booster Club design tokens.
+   Copied verbatim from the Claude Design system "Lake Robotics Booster Club Design System"
+   (project cc32da7b-6e30-4d6e-884d-d854fffd7753). Do not edit values here — edit the design
+   system and re-sync. */
+@import url("tokens/fonts.css");
+@import url("tokens/colors.css");
+@import url("tokens/typography.css");
+@import url("tokens/spacing.css");
+@import url("tokens/radii.css");
+@import url("tokens/elevation.css");
+@import url("tokens/motion.css");
+@import url("tokens/base.css");

@@ -1,0 +1,88 @@
+:root{
+/* ---- Brand core (from the Lake Athletics brand sheet) ---- */
+--lake-blue:#2E2E92;   /* PRIMARY  CMYK 99 98 3 0   RGB 46 46 146 */
+--lake-white:#FFFFFF;  /* PRIMARY  CMYK 0 0 0 0     RGB 255 255 255 */
+--lake-red:#FA0000;    /* SECONDARY CMYK 2 100 100 0 RGB 250 0 0 */
+--lake-black:#000000;  /* gear + rule weight in the Robotics Booster Club mark */
+
+/* ---- Blue ramp (brand blue is blue-600) ---- */
+--blue-900:#14143F;
+--blue-800:#1D1D62;
+--blue-700:#252577;
+--blue-600:#2E2E92;
+--blue-500:#4141AE;
+--blue-400:#6868C6;
+--blue-300:#9A9ADC;
+--blue-200:#C6C6EC;
+--blue-100:#E3E3F6;
+--blue-050:#F2F2FB;
+
+/* ---- Red ramp (brand red is red-500; darker steps are press states only) ---- */
+--red-700:#A80000;
+--red-600:#CE0000;
+--red-500:#FA0000;
+--red-400:#FF4D4D;
+--red-300:#FF8A8A;
+--red-200:#FFC2C2;
+--red-100:#FFE6E6;
+
+/* ---- Neutrals (cool-leaning, to sit under the blue) ---- */
+--gray-950:#0D0D12;
+--gray-900:#1A1A21;
+--gray-800:#2A2A33;
+--gray-700:#43434F;
+--gray-600:#5C5C69;
+--gray-500:#7B7B88;
+--gray-400:#A2A2AD;
+--gray-300:#C7C7CF;
+--gray-200:#E2E2E7;
+--gray-100:#F1F1F4;
+--gray-050:#F8F8FA;
+
+/* ---- Support hues (status, not brand) ---- */
+--green-600:#1C7F3C;
+--green-100:#E1F3E7;
+--amber-600:#B26A00;
+--amber-100:#FCEFD9;
+
+/* ---- Semantic: text ---- */
+--text-heading:var(--blue-600);
+--text-body:var(--gray-800);
+--text-muted:var(--gray-600);
+--text-subtle:var(--gray-500);
+--text-on-blue:var(--lake-white);
+--text-on-red:var(--lake-white);
+--text-link:var(--blue-600);
+--text-link-hover:var(--red-500);
+--text-danger:var(--red-600);
+--text-success:var(--green-600);
+
+/* ---- Semantic: surfaces ---- */
+--surface-page:var(--lake-white);
+--surface-page-alt:var(--gray-050);
+--surface-card:var(--lake-white);
+--surface-sunken:var(--gray-100);
+--surface-brand:var(--blue-600);
+--surface-brand-deep:var(--blue-800);
+--surface-brand-tint:var(--blue-050);
+--surface-accent:var(--red-500);
+--surface-accent-tint:var(--red-100);
+--surface-inverse:var(--gray-950);
+
+/* ---- Semantic: lines ---- */
+--border-default:var(--gray-200);
+--border-strong:var(--gray-300);
+--border-brand:var(--blue-600);
+--border-accent:var(--red-500);
+--rule-sheet:#9A9A9A;
+
+/* ---- Semantic: interactive ---- */
+--action-primary:var(--blue-600);
+--action-primary-hover:var(--blue-700);
+--action-primary-active:var(--blue-800);
+--action-accent:var(--red-500);
+--action-accent-hover:var(--red-600);
+--action-accent-active:var(--red-700);
+--focus-ring:var(--red-500);
+--overlay-scrim:rgb(20 20 63 / .68);
+}

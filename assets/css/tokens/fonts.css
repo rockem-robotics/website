@@ -1,0 +1,5 @@
+/* Brand fonts are Industry (Fontfabric) and Revue — both licensed retail faces that were
+   not supplied. Saira is the approved substitute. Swap for local @font-face rules if real
+   Industry files ever arrive; the --font-* stacks already list "Industry" first. */
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap");

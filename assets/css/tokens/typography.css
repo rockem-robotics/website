@@ -1,0 +1,54 @@
+:root{
+/* ---- Families ---- */
+--font-display:"Saira","Industry","Arial Narrow",sans-serif;  /* headlines, always heavy, often italic */
+--font-sans:"Saira","Industry",system-ui,sans-serif;          /* everything else */
+--font-mono:"JetBrains Mono",ui-monospace,monospace;          /* team numbers, scores, data */
+
+/* ---- Weights ---- */
+--weight-light:300;
+--weight-regular:400;
+--weight-medium:500;
+--weight-semibold:600;
+--weight-bold:700;
+--weight-black:900;
+
+/* ---- Type scale ---- */
+--size-display-1:76px;
+--size-display-2:56px;
+--size-h1:40px;
+--size-h2:30px;
+--size-h3:23px;
+--size-h4:19px;
+--size-body-lg:18px;
+--size-body:16px;
+--size-body-sm:14px;
+--size-caption:13px;
+--size-label:12px;
+
+/* ---- Line heights ---- */
+--leading-tight:0.96;
+--leading-snug:1.14;
+--leading-heading:1.2;
+--leading-body:1.6;
+--leading-relaxed:1.72;
+
+/* ---- Tracking ---- */
+--tracking-display:-0.015em;
+--tracking-heading:0.005em;
+--tracking-body:0;
+--tracking-caps:0.09em;
+--tracking-caps-wide:0.16em;
+
+/* ---- The brand's signature slant (Industry Black Italic runs ~11deg) ---- */
+--brand-italic-skew:-11deg;
+
+/* ---- Composite roles ---- */
+--type-display:italic var(--weight-black) var(--size-display-1)/var(--leading-tight) var(--font-display);
+--type-h1:italic var(--weight-black) var(--size-h1)/var(--leading-snug) var(--font-display);
+--type-h2:var(--weight-bold) var(--size-h2)/var(--leading-heading) var(--font-sans);
+--type-h3:var(--weight-semibold) var(--size-h3)/var(--leading-heading) var(--font-sans);
+--type-body:var(--weight-regular) var(--size-body)/var(--leading-body) var(--font-sans);
+--type-body-light:var(--weight-light) var(--size-body-lg)/var(--leading-relaxed) var(--font-sans);
+--type-label:var(--weight-bold) var(--size-label)/1.2 var(--font-sans);
+--type-mono:var(--weight-medium) var(--size-body-sm)/1.4 var(--font-mono);
+}

@@ -1,0 +1,14 @@
+:root{
+/* The brand is blocky and athletic: sharp or near-sharp by default. */
+--radius-none:0;
+--radius-xs:2px;
+--radius-sm:3px;
+--radius-md:5px;
+--radius-lg:8px;
+--radius-pill:999px;   /* small metadata chips only, never buttons */
+
+/* Stroke weights */
+--border-hairline:1px;
+--border-thick:2px;
+--border-logo:3px;     /* the red keyline weight around the marks */
+}

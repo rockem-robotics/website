@@ -1,0 +1,26 @@
+:root{
+/* Soft shadows, used lightly: cards mostly earn separation from borders. */
+--shadow-xs:0 1px 2px rgb(20 20 63 / .07);
+--shadow-sm:0 2px 6px rgb(20 20 63 / .09);
+--shadow-md:0 6px 18px rgb(20 20 63 / .11);
+--shadow-lg:0 16px 40px rgb(20 20 63 / .16);
+
+/* The brand motif: a hard, un-blurred offset block. Use instead of blur for emphasis. */
+--shadow-hard-red:4px 4px 0 0 var(--lake-red);
+--shadow-hard-red-sm:3px 3px 0 0 var(--lake-red);
+--shadow-hard-blue:4px 4px 0 0 var(--lake-blue);
+--shadow-hard-ink:4px 4px 0 0 var(--lake-black);
+
+/* Focus */
+--ring-focus:0 0 0 3px rgb(250 0 0 / .38);
+--ring-focus-inverse:0 0 0 3px rgb(255 255 255 / .6);
+
+/* z-index */
+--z-base:0;
+--z-sticky:100;
+--z-header:200;
+--z-dropdown:300;
+--z-overlay:400;
+--z-modal:500;
+--z-toast:600;
+}

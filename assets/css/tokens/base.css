@@ -1,0 +1,20 @@
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font:var(--type-body);color:var(--text-body);background:var(--surface-page);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{margin:0;color:var(--text-heading);text-wrap:balance}
+h1{font:var(--type-h1);letter-spacing:var(--tracking-display);text-transform:uppercase}
+h2{font:var(--type-h2);letter-spacing:var(--tracking-heading)}
+h3{font:var(--type-h3)}
+h4{font:var(--weight-bold) var(--size-h4)/var(--leading-heading) var(--font-sans)}
+p{margin:0 0 var(--space-4);text-wrap:pretty}
+a{color:var(--text-link);text-decoration-thickness:2px;text-underline-offset:2px;transition:color var(--duration-fast) var(--ease-standard)}
+a:hover{color:var(--text-link-hover)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+code,kbd{font-family:var(--font-mono);font-size:.92em}
+hr{border:0;border-top:var(--border-hairline) solid var(--border-default);margin:var(--space-8) 0}
+::selection{background:var(--lake-red);color:#fff}
+/* Brand utility: the slanted eyebrow rule that sits under LAKE in every lockup */
+.lake-rule{display:block;height:4px;background:var(--lake-red);border-top:2px solid var(--lake-blue);border-bottom:2px solid var(--lake-blue);box-sizing:content-box}
+/* Brand utility: all-caps italic heavy, the house headline treatment */
+.lake-shout{font-family:var(--font-display);font-weight:var(--weight-black);font-style:italic;text-transform:uppercase;letter-spacing:var(--tracking-display);line-height:var(--leading-tight)}
+/* Brand utility: sentence-case light italic, the house sub-headline treatment */
+.lake-sub{font-family:var(--font-sans);font-weight:var(--weight-light);font-style:italic;color:var(--blue-500)}

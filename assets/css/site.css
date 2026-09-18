@@ -655,30 +655,26 @@ a.card,
   min-height: 78px;
 }
 
-/* ---- Brand lockup: white tile + two-line wordmark ---- */
+/* ---- Brand lockup: the booster club gear mark plus the club name ---- */
 
 .brand {
   display: flex;
   align-items: center;
   gap: var(--space-3);
   text-decoration: none;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
-/* The club mark is opaque white artwork, so on blue it must sit in a
-   white tile. #fff is the one literal the design system itself uses. */
-.brand__tile {
-  display: block;
-  background: #fff;
-  border-radius: var(--radius-sm);
-  padding: 6px;
-  flex-shrink: 0;
-}
-
+/* The gear mark's ring type ("LAKE ROBOTICS BOOSTER CLUB") stops being legible
+   below roughly 90px, so at header size the mark works as a recognition cue and
+   the club name is set as live text beside it. The artwork's white background
+   has been flood-filled to transparency, so it needs no white tile on blue. */
 .brand__mark {
   display: block;
-  width: 44px;
-  height: 44px;
+  height: 52px;
+  width: auto;
+  flex-shrink: 0;
 }
 
 .brand__text {
@@ -707,10 +703,6 @@ a.card,
   letter-spacing: var(--tracking-caps-wide);
   text-transform: uppercase;
   color: var(--blue-200);
-}
-
-.brand:hover .brand__name {
-  color: var(--lake-white);
 }
 
 /* ---- Nav ---- */
@@ -1178,12 +1170,7 @@ a.card:active,
   }
 
   .brand__mark {
-    width: 34px;
-    height: 34px;
-  }
-
-  .brand__tile {
-    padding: var(--space-1);
+    height: 38px;
   }
 
   .brand__name {
@@ -1276,31 +1263,28 @@ a.card:active,
 }
 
 /* =============================================================================
-   14. HOME PAGE (index.html) — page-specific, nothing else uses this.
-   The hero shows the club mark larger than the 44px header lockup, so it needs
-   its own white tile rather than the chrome's .brand__tile. The mark artwork is
-   opaque white, so on the blue hero band it must sit on a white field — #fff is
-   the one literal the design system itself uses. Everything else on the home
-   page is built from the shared classes above.
+   14. HOME PAGE (index.html) - page-specific, nothing else uses this.
+   The hero shows the gear mark large enough that its ring type reads, which the
+   52px header version cannot do. Transparent artwork, so no white tile.
+   Everything else on the home page is built from the shared classes above.
    ========================================================================== */
 
 .home-hero-mark {
-  display: inline-block;
-  margin-bottom: var(--space-6);
-  padding: 6px;
-  background: #fff;
-  border-radius: var(--radius-sm);
+  display: block;
+  margin-bottom: var(--space-8);
+  height: 150px;
+  width: auto;
+  max-width: 100%;
 }
 
-.home-hero-mark img {
-  display: block;
-  width: 84px;
-  height: 84px;
+@media (max-width: 860px) {
+  .home-hero-mark {
+    height: 104px;
+  }
 }
 
 @media (max-width: 560px) {
-  .home-hero-mark img {
-    width: 64px;
-    height: 64px;
+  .home-hero-mark {
+    height: 72px;
   }
 }
